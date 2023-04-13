@@ -1,1 +1,0 @@
-sudo docker stop my-nginx && sudo docker rm my-nginx && sudo docker run --name my-nginx --restart always -p 80:80 -p 443:443 -v /home/runtipi/runtipi-setup-nginx/default.conf:/etc/nginx/nginx.conf -v /home/runtipi/runtipi-setup-nginx/logs:/var/log/nginx -v /etc/letsencrypt:/etc/letsencrypt -d nginx
